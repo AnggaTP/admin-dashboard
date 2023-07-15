@@ -1,0 +1,83 @@
+:root{
+    font-size: 16px;
+    --sky:#0284c7;
+    --skywhite : #f0f9ff;
+    --skydarker : #bae6fd;
+
+
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar content"
+    ;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar-container{
+    background-color: var(--sky);
+    grid-area: sidebar;
+    max-height: 100%;
+    min-height: 225px;
+    padding: 20px 0px 0px 0px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr;
+    align-items: start;
+
+}
+
+.title{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding-left: 20px;
+}
+
+.main-menu{
+    display: grid;
+}
+
+.second-menu{
+    display: grid;
+    padding-top: 50px;
+}
+
+button{
+    min-height: 40px;
+    border: none;
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: var(--sky);
+    color: whitesmoke;
+    padding-left: 30px;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+i{
+    padding-right: 30px;
+}
+
+
+/* Header Styling */
+.header-container{
+    background-color: var(--skywhite);
+    grid-area: header;
+}
+
+/* content styling */
+.content-container{
+    background-color: var(--skydarker);
+    grid-area: content;
+}
